@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.select-disable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+.verde-escuro {
+    color: #3db08f;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-active {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 10px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 90px;
+}
+
+.logo {
+    width: 180px;
+    margin-left: 90px;
+}
+
+.nav-item {
+    margin-left: 55px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #313131;
+}
+
+.conteudo-header {
+    position: relative;
+    display: flex;
+    margin-top: 8vh;
+    width: 100%;
+    height: 92vh;
+}
+
+.subtitulo-header {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    background: linear-gradient(116.36deg, #46CB9A -10.88%, #349684 64.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.titulo-header {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    color: #313131;
+}
+
+.descricao-header {
+    margin-top: 60px;
+    width: 720px;
+    color: #313131;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.btn-header {
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    height: 55px;
+    width: 220px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(116.36deg, #46CB9A -10.88%, #349684 64.89%);
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.btn-header::before {
+    content: 'Saiba mais';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 220px;
+    height: 55px;
+    background: linear-gradient(116.36deg, #349684 -10.88%, #46CB9A 64.89%);
+    border-radius: 30px;
+    border: none;
+    line-height: 55px;
+    transition: all .4s ease-in-out;
+}
+
+.btn-header:hover::before {
+    opacity: 0;
+}
+
+.textos-header {
+    margin: 90px;
+}
+
+.img-header {
+    position: absolute;
+    right: 0;
+    top: -20%;
+    margin-right: 90px;
+    /* height: 800px;
+    width: 800px; deixa isso por enquanto pq vou fazer uns testes com a responsividade*/
+    width: 45%;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
