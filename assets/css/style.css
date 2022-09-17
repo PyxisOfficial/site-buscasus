@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .select-disable {
@@ -16,8 +17,12 @@ body {
 }
 
 
-.verde-escuro {
+.verde-claro {
     color: #3db08f;
+}
+
+.verde-escuro {
+    color: #349684;
 }
 
 #header {
@@ -147,4 +152,106 @@ body {
     width: 45%;
     object-fit: cover;
     object-position: 100% 100%;
+}
+
+.veja-mais {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    margin-left: 90px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: #000000;
+    opacity: 0.5;
+    font-size: 25px;
+}
+
+.setinha {
+    -moz-animation: setinha 2s infinite;
+    -webkit-animation: setinha 2s infinite;
+    animation: setinha 2s infinite;
+  }
+
+@keyframes setinha {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-6px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+#sobre {
+    width: 100%;
+}
+
+.container-g-sobre { /* -g- = geral*/
+    margin: 0 90px 0 90px;
+}
+
+.titulo-sobre {
+    color: #496461;
+}
+
+.textos-sobre {
+    margin-top: 30px;
+    display: flex;
+}
+
+.descricao-sobre {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.qrcode {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+.container-video {
+    width: 100%;
+    position: relative;
+}
+
+.titulo-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #496461;
+}
+
+.icone-info {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.video-sobre {
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+    border: 8px solid #ffffff00;
+    outline: 4px solid #496461;
+}
+
+.shape1 {
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    z-index: -1;
+}
+
+.shape2 {
+    position: absolute;
+    bottom: -24%;
+    right: -12%;
+    z-index: -1;
 }
