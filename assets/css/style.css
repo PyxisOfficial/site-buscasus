@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
+    height: 400vw;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -73,6 +78,8 @@ body {
 .conteudo-header {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 8vh;
     width: 100%;
     height: 92vh;
@@ -81,7 +88,7 @@ body {
 .subtitulo-header {
     margin: 0;
     padding: 0;
-    font-size: 40px;
+    font-size: 2vw;
     background: linear-gradient(116.36deg, #46CB9A -10.88%, #349684 64.89%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -92,15 +99,15 @@ body {
 .titulo-header {
     margin: 0;
     padding: 0;
-    font-size: 45px;
+    font-size: 3vw;
     color: #313131;
 }
 
 .descricao-header {
     margin-top: 60px;
-    width: 720px;
+    width: 42%;
     color: #313131;
-    font-size: 26px;
+    font-size: 1.4vw;
     font-weight: 500;
 }
 
@@ -144,13 +151,12 @@ body {
 .img-header {
     position: absolute;
     right: 0;
-    top: -20%;
     margin-right: 90px;
-    /* height: 800px;
-    width: 800px; deixa isso por enquanto pq vou fazer uns testes com a responsividade*/
-    width: 45%;
+    height: 45vw;
+    width: 45vw; 
     object-fit: cover;
     object-position: 100% 100%;
+    z-index: -1;
 }
 
 .veja-mais {
@@ -193,11 +199,11 @@ body {
 }
 
 .titulo-sobre {
-    color: #496461;
+    color: #349684;
 }
 
 .textos-sobre {
-    margin-top: 30px;
+    margin: 30px 0 30px 0;
     display: flex;
 }
 
@@ -225,12 +231,13 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    color: #496461;
+    color: #349684;
 }
 
 .icone-info {
     font-size: 25px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .video-sobre {
@@ -243,6 +250,7 @@ body {
 
 .shape1 {
     position: absolute;
+    width: 30vw;
     top: -5%;
     left: -10%;
     z-index: -1;
@@ -250,7 +258,91 @@ body {
 
 .shape2 {
     position: absolute;
-    bottom: -24%;
+    width: 40vw;
+    bottom: -20%;
     right: -12%;
     z-index: -1;
+}
+
+#app {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.titulo-app {
+    text-align: center;
+    color: #349684;
+}
+
+.container-app {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.img-app {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    margin-right: 90px;
+    height: 35vw;
+    width: 40vw; 
+    object-fit: cover;
+    object-position: 100% 100%;
+    z-index: -1;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8vw 0vw 0 35vw;
+}
+
+.card {
+    display: flex;
+    width: 25vw;
+    height: 4vw;
+    border-radius: 1vw;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 35px 14px rgba(0, 0, 0, 0.01)) drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.05)) drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    margin: 2vw 1vw;
+}
+
+.titulo-container-cards {
+    position: absolute;
+    top: 10%;
+    color: #349684;
+    font-size: 1.4vw;
+}
+
+.container-card-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    background-color: #46CB9A;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card-img {
+    width: 50%;
+}
+
+.mic {
+    width: 40%;
+}
+
+.texto-card {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #313131;
 }
