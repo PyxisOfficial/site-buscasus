@@ -14,7 +14,7 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="#app" class="nav-link">Aplicativo</a></li>
-                <li class="nav-item"><a href="#ajuda" class="nav-link">Ajuda</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
                 <li class="nav-item"><a href="" class="nav-link">Login / Cadastro</a></li>
             </ul>
         </nav>
@@ -62,27 +62,59 @@
             <div class="container-cards">
                 <h3 class="titulo-container-cards">Funcionalidades</h3>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/search.svg" alt="" class="card-img"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/search.svg" alt="" class="card-img select-disable"></div>
                     <span class="texto-card">Pesquisa por proximidade</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/stethoscope.svg" alt="" class="card-img"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/stethoscope.svg" alt="" class="card-img select-disable"></div>
                     <span class="texto-card">Verificar escala de médicos</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/mic.svg" alt="" class="card-img mic"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/mic.svg" alt="" class="card-img mic select-disable"></div>
                     <span class="texto-card">Pesquisa por voz</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/heart-monitor.svg" alt="" class="card-img"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/heart-monitor.svg" alt="" class="card-img select-disable"></div>
                     <span class="texto-card">Ver plantões do dia</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/location.svg" alt="" class="card-img"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/location.svg" alt="" class="card-img select-disable"></div>
                     <span class="texto-card">Mapa de hospitais próximos</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="contato">
+        <img src="assets/img/backgrounds/background-contato.png" alt="" class="background-contato">
+        <div class="container contato">
+        <h2 class="titulo-contato">Entre em contato</h2>
+            <form action="" class="form-contato">
+                <div class="cont-input">
+                    <label for="emailUser">Email</label>
+                    <input type="email" name="emailUser" id="emailUser" class="input-contato" placeholder="seu@email.com">
+                </div>
+
+                <div class="cont-input">
+                    <label for="assuntoUser">Assunto</label>
+                    <input type="text" name="assuntoUser" id="assuntoUser" class="input-contato" placeholder="Assunto">
+                </div>
+
+                <div class="cont-input">
+                    <label for="msgUser">Mensagem</label>
+                    <textarea name="msgUser" id="msgUser" cols="30" rows="10" placeholder="Sua mensagem"
+                    maxlength="250"></textarea>
+                </div>
+
+                <img src="assets/img/reCAPTCHA.png" alt="">
+
+                <button class="btn-contato">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="footer">
+
     </section>
 
     <script src="assets/js/index.js"></script>
