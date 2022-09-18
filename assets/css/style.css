@@ -381,17 +381,16 @@ body {
 
 .form-contato {
     width: 30vw;
-    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 2vh;
-    padding: 3vh;
+    padding: 2vh;
 }
 
 .cont-input {
-    width: 90%;
+    width: 95%;
     margin-bottom: 3vh;
 }
 
@@ -460,4 +459,76 @@ body {
 
 .btn-contato:hover:before {
     opacity: 0;
+}
+
+#footer {
+    width: 100%;
+    background-color: #091C18;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.primeiro-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.logo-footer {
+    width: 20vw;
+    margin-bottom: 3vh;
+}
+
+.cont-redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-img {
+    width: 35px;
+    margin-right: 1vw;
+    margin-bottom: 3vh;
+    cursor: pointer;
+}
+
+.copy {
+    color: #FFFFFF;
+}
+
+.footer-list {
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.footer-list-title {
+    font-weight: 600;
+}
+
+.footer-list-item {
+    font-weight: 300;
+    margin: 2vh 0;
+}
+
+.footer-list-item a {
+    color: #FFFFFF;
+}
+
+.endereco {
+    width: 15vw;
+}
+
+.creditos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+}
+
+.creditos a {
+    color: #FFFFFF;
 }
