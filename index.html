@@ -1,127 +1,156 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>BuscaSUS</title>
 </head>
+
 <body>
     <header id="header">
         <nav id="navbar">
-            <img src="assets/img/logo-completa.png" alt="" class="logo">
+            <a href="#header"><img src="assets/img/logo-completa.png" alt="Logo BuscaSUS"
+                    class="logo select-disable"></a>
             <ul class="nav-list">
                 <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="#app" class="nav-link">Aplicativo</a></li>
                 <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Login / Cadastro</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Login / Cadastro</a></li>
             </ul>
         </nav>
         <div class="conteudo-header">
             <div class="textos-header">
                 <h2 class="subtitulo-header">Conheça o BuscaSUS</h2>
                 <h1 class="titulo-header">Encontrando o médico mais <br> próximo de você!</h1>
-                <p class="descricao-header"><span class="verde-escuro">Evite perder tempo</span> indo de hospital em hospital em situações de emergência 
-                    para encontrar o que precisa, com o BuscaSUS você faz essa <span class="verde-escuro">busca</span> de onde estiver <span class="verde-escuro">em segundos!</span>
+                <p class="descricao-header"><span class="verde-escuro">Evite perder tempo</span> indo de hospital em
+                    hospital em situações de emergência
+                    para encontrar o que precisa, com o BuscaSUS você faz essa <span class="verde-escuro">busca</span>
+                    de onde estiver <span class="verde-escuro">em segundos!</span>
                 </p>
                 <button class="btn-header">Saiba mais</button>
             </div>
             <img src="assets/img/mockups/mockup1.png" alt="" class="img-header select-disable">
         </div>
-        <span class="veja-mais setinha select-disable" id="verMais">
+        <a href="#sobre" class="veja-mais setinha select-disable" id="verMais">
             Continue lendo <br>
             <span class="material-symbols-outlined setinha">expand_more</span>
-        </span>
+        </a>
     </header>
 
     <section id="sobre">
         <div class="container-g-sobre">
             <h2 class="titulo-sobre">O que é o BuscaSUS?</h2>
             <div class="textos-sobre">
-                <p class="descricao-sobre">O <span class="verde-escuro">BuscaSUS</span> é um aplicativo feito como o intuito de evitar com que você perca tempo procurando médicos nos hospitais da sua região 
-                    nele você pode realizar uma pesquisa pela especialidade médica que precisa e encontrar os hospitais mais próximos de você que atendem suas necessidades, 
-                    evitando como que precise ir de hospital em hospital procurando. Além disso, também é possível verificar a escala dos médicos cadastrados no nosso app! 
+                <p class="descricao-sobre">O <span class="verde-escuro">BuscaSUS</span> é um aplicativo feito como o
+                    intuito de evitar com que você perca tempo procurando médicos nos hospitais da sua região
+                    nele você pode realizar uma pesquisa pela especialidade médica que precisa e encontrar os hospitais
+                    mais próximos de você que atendem suas necessidades,
+                    evitando como que precise ir de hospital em hospital procurando. Além disso, também é possível
+                    verificar a escala dos médicos cadastrados no nosso app!
                     Abaixo temos um vídeo breve que explica um pouco mais a ideia e o objetivo do BuscaSUS:
                 </p>
-                <img src="assets/img/qrcodebuscasus.png" alt="" class="qrcode">
+                <img src="assets/img/qrcodebuscasus.png" alt="QR Code BuscaSUS" class="qrcode select-disable">
             </div>
             <div class="container-video">
-                <h3 class="titulo-video">Video Pitch <span class="material-symbols-outlined icone-info select-disable">info</span></h3>
-                <iframe class="video-sobre select-disable" width="560" height="315" src="https://www.youtube.com/embed/Q1puhFhs3hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-                <img src="assets/img/shapes/shape1.png" alt="" class="shape1">        
-                <img src="assets/img/shapes/shape2.png" alt="" class="shape2">
+                <h3 class="titulo-video">Video Pitch <span
+                        class="material-symbols-outlined icone-info select-disable">info</span></h3>
+                <iframe class="video-sobre select-disable" width="560" height="315"
+                    src="https://www.youtube.com/embed/Q1puhFhs3hQ" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <img src="assets/img/shapes/shape1.png" alt="" class="shape1 select-disable">
+                <img src="assets/img/shapes/shape2.png" alt="" class="shape2 select-disable">
             </div>
         </div>
     </section>
 
-    <section id="app">
-        <h2 class="titulo-app">Mais sobre o aplicativo</h2>
+    <section class="app">
+        <h2 id="app" class="titulo-app">Mais sobre o aplicativo</h2>
         <div class="container-app">
-            <img src="assets/img/mockups/mockup2.png" alt="" class="img-app">
+            <img src="assets/img/mockups/mockup2.png" alt="" class="img-app select-disable">
             <div class="container-cards">
                 <h3 class="titulo-container-cards">Funcionalidades</h3>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/search.svg" alt="" class="card-img select-disable"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/search.svg"
+                            class="card-img select-disable"></div>
                     <span class="texto-card">Pesquisa por proximidade</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/stethoscope.svg" alt="" class="card-img select-disable"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/stethoscope.svg"
+                            class="card-img select-disable"></div>
                     <span class="texto-card">Verificar escala de médicos</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/mic.svg" alt="" class="card-img mic select-disable"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/mic.svg"
+                            class="card-img mic select-disable"></div>
                     <span class="texto-card">Pesquisa por voz</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/heart-monitor.svg" alt="" class="card-img select-disable"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/heart-monitor.svg"
+                            class="card-img select-disable"></div>
                     <span class="texto-card">Ver plantões do dia</span>
                 </div>
                 <div class="card">
-                    <div class="container-card-img"><img src="assets/img/icones/location.svg" alt="" class="card-img select-disable"></div>
+                    <div class="container-card-img"><img src="assets/img/icones/location.svg"
+                            class="card-img select-disable"></div>
                     <span class="texto-card">Mapa de hospitais próximos</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato">
-        <img src="assets/img/backgrounds/background-contato.png" alt="" class="background-contato">
+    <section class="contato">
+        <img src="assets/img/backgrounds/background-contato.png" alt="" class="background-contato select-disable">
         <div class="container contato">
-        <h2 class="titulo-contato">Entre em contato</h2>
-            <form action="" class="form-contato">
+            <h2 id="contato" class="titulo-contato">Entre em contato</h2>
+            <form id="form" action="" class="form-contato">
                 <div class="cont-input">
                     <label for="emailUser">Email</label>
-                    <input type="email" name="emailUser" id="emailUser" class="input-contato" placeholder="seu@email.com">
+                    <input type="email" name="emailUser" id="emailUser" class="input-contato select-disable"
+                        placeholder="seu@email.com">
+                    <p class="error-text">E-mail digitado inválido!</p>
                 </div>
 
                 <div class="cont-input">
                     <label for="assuntoUser">Assunto</label>
-                    <input type="text" name="assuntoUser" id="assuntoUser" class="input-contato" placeholder="Assunto">
+                    <input type="text" name="assuntoUser" id="assuntoUser" class="input-contato select-disable"
+                        placeholder="Assunto">
+                    <p class="error-text">Por favor, digite um assunto!</p>
                 </div>
 
                 <div class="cont-input">
                     <label for="msgUser">Mensagem</label>
-                    <textarea name="msgUser" id="msgUser" cols="30" rows="10" placeholder="Sua mensagem"
-                    maxlength="250"></textarea>
+                    <textarea name="msgUser" id="msgUser" class="textarea-contato select-disable" cols="30" rows="10"
+                        placeholder="Sua mensagem" maxlength="250"></textarea>
+                    <p class="error-text">Por favor, digite uma mensagem!</p>
                 </div>
 
-                <img src="assets/img/reCAPTCHA.png" alt="">
+                <img class="select-disable" src="assets/img/reCAPTCHA.png" alt="">
 
-                <button class="btn-contato">Enviar</button>
+                <input id="submitBtn" class="btn-contato" type="button" value="Enviar">
             </form>
         </div>
     </section>
 
     <section id="footer">
         <div class="primeiro-footer">
-            <img src="assets/img/logo-branca.png" alt="" class="logo-footer">
-            <div class="contt-redes-sociais">
-                <a href=""><img src="assets/img/icones/redes/facebook.png" alt="" class="redes-img"></a>
-                <a href=""><img src="assets/img/icones/redes/instagram.png" alt="" class="redes-img"></a>
-                <a href=""><img src="assets/img/icones/redes/linkedin.png" alt="" class="redes-img"></a>
-                <a href=""><img src="assets/img/icones/redes/twitter.png" alt="" class="redes-img"></a>
-                <a href=""><img src="assets/img/icones/redes/youtube.png" alt="" class="redes-img"></a>
+            <a href="#header"><img src="assets/img/logo-branca.png" alt="Logo BuscaSUS" class="logo-footer select-disable"></a>
+            <div class="cont-redes-sociais">
+                <a href="#"><img src="assets/img/icones/redes/facebook.png" alt="Ícone Facebook"
+                        class="redes-img select-disable"></a>
+                <a href="#"><img src="assets/img/icones/redes/instagram.png" alt="Ícone Instagram"
+                        class="redes-img select-disable"></a>
+                <a href="#"><img src="assets/img/icones/redes/linkedin.png" alt="Ícone LinkedIn"
+                        class="redes-img select-disable"></a>
+                <a href="#"><img src="assets/img/icones/redes/twitter.png" alt="Ícone Twitter"
+                        class="redes-img select-disable"></a>
+                <a href="#"><img src="assets/img/icones/redes/youtube.png" alt="Ícone Youtube"
+                        class="redes-img select-disable"></a>
             </div>
             <span class="copy">Pyxis &copy; 2022</span>
         </div>
@@ -144,21 +173,27 @@
         <div class="quarto-footer">
             <ul class="footer-list last-list">
                 <li class="footer-list-title">Endereço</li>
-                <li class="footer-list-item endereco">R. Feliciano de Mendonça, 290 - Guaianases, São Paulo - SP, 08460-365</li>
+                <li class="footer-list-item endereco">R. Feliciano de Mendonça, 290 - Guaianases, São Paulo - SP,
+                    08460-365</li>
             </ul>
         </div>
         <div class="creditos">
             <ul class="footer-list">
                 <li class="footer-list-title">Créditos</li>
-                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/destination" title="destination icons">Destination icons created by Bombasticon Studio - Flaticon</a></li>
-                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/disease" title="disease icons">Disease icons created by Bombasticon Studio - Flaticon</a></li>
-                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons">Magnifying glass icons created by Bombasticon Studio - Flaticon</a></li>
-                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/podcast" title="podcast icons">Podcast icons created by Bombasticon Studio - Flaticon</a></li>
+                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/destination"
+                        title="destination icons">Destination icons created by Bombasticon Studio - Flaticon</a></li>
+                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/disease"
+                        title="disease icons">Disease icons created by Bombasticon Studio - Flaticon</a></li>
+                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/magnifying-glass"
+                        title="magnifying glass icons">Magnifying glass icons created by Bombasticon Studio -
+                        Flaticon</a></li>
+                <li class="footer-list-item"><a href="https://www.flaticon.com/free-icons/podcast"
+                        title="podcast icons">Podcast icons created by Bombasticon Studio - Flaticon</a></li>
             </ul>
-        </div> 
+        </div>
     </section>
 
     <script src="assets/js/index.js"></script>
 </body>
-</html>
 
+</html>
