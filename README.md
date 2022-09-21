@@ -10,7 +10,7 @@ Site criado para conhecer o BuscaSUS, um projeto criado para o trabalho de concl
 
 <br>
 
-## 🚀 Skills
+## 🚀 Tecnologias utilizadas
 
 <div align="left">
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
