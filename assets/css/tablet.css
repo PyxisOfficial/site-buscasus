@@ -1,0 +1,54 @@
+#header {
+    background: #FFFFFF;
+}
+
+.logo {
+    width: 25vw;
+    margin-left: 8vw;
+}
+
+.conteudo-header {
+    align-items: flex-start;
+}
+
+.img-header {
+    display: block;
+    z-index: 0;
+    margin-right: 4vw;
+    top: 30%;
+}
+
+.descricao-header {
+    width: 45vw;
+    color: #313131;
+    font-size: 2.4vh;
+}
+
+.verde-escuro {
+    color: #349684;
+}
+
+.btn-header {
+    background: linear-gradient(116.36deg, #46CB9A -10.88%, #349684 64.89%);
+    font-weight: 600;
+}
+
+.video-sobre {
+    height: 44vh;
+}
+
+.shape1 {
+    width: 35vw;
+    left: -20%;
+    top: 0%;
+}
+
+.shape2 {
+    width: 50vw;
+    right: -20%;
+}
+
+.img-app {
+    display: block;
+    width: 50vw;
+}

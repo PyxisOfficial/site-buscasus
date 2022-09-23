@@ -390,6 +390,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100%;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -404,6 +405,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .form-contato {
@@ -418,7 +420,7 @@ body {
 
 .cont-input {
     width: 95%;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 
 .input-contato {
@@ -575,11 +577,33 @@ body {
 }
 
 .creditos {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-right: 90px;
+    padding-bottom: 2vh;
+    background: #091C18;
 }
 
 .creditos a {
     color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.creditos-list  {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+}
+
+.creditos-list-item  {
+    margin-top: 1vh;
+}
+
+.titulo-creditos {
+    color: white;
+    text-align: center;
 }
