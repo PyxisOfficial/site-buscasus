@@ -3,8 +3,8 @@ body, html {
 }
 
 #header {
-    background-image: linear-gradient(to left top, #287365, #2a796b, #2c8070, #2f8676, #318d7c, #329481, #339c86, #35a38b, #37ad90, #3bb794, #40c197, #46cb9a);
-    height: 80vh;
+    /* background-image: linear-gradient(to left top, #287365, #2a796b, #2c8070, #2f8676, #318d7c, #329481, #339c86, #35a38b, #37ad90, #3bb794, #40c197, #46cb9a); */
+    height: 100vh;
 }
 
 #navbar {
@@ -15,13 +15,22 @@ body, html {
     width: 100%;
     flex-direction: column;
     position: absolute;
-    top: -100vh;
+    top: 8vh;
+    left: 100%;
     margin: 0;
     background-color: #FFFFFF;
     z-index: -1;
+    transition: all .2s;
+    box-shadow: 0px 21px 15px -15px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #349684;
+}
+
+.nav-list-active {
+    left: 0;
 }
 
 .nav-item {
+    padding: 15px;
     width: 100%;
     justify-content: center;
 }
@@ -36,16 +45,16 @@ body, html {
     margin-left: 8%;
 }
 
-.mobile-menu {
-    margin-right: 8%;
-    z-index: 2;
-}
-
-.lineS, .lineM {
-    display: unset;
+#mobileMenu {
+    display: flex;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .conteudo-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
     margin: 0;
     padding-top: 8vh;
     flex-direction: column;
@@ -58,8 +67,6 @@ body, html {
 
 .subtitulo-header {
     font-size: 1.5em;
-    color: #FFFFFF;
-    background: #FFFFFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -68,24 +75,19 @@ body, html {
     font-size: 1.5em;
 }
 
-.verde-escuro {
-    color: #313131;
-}
-
 .descricao-header {
     font-size: 1em;
     width: 100%;
-    color: #FFFFFF;
 }
 
 .btn-header {
-    background: rgba(49, 49, 49, 0.8);
     backdrop-filter: blur(13px);
     color: #FFFFFF;
-    height: 6vh;
-    width: 150px;
+    height: 5vh;
+    width: 130px;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .btn-header::before {
@@ -93,7 +95,10 @@ body, html {
 }
 
 .img-header {
-    display: none;
+    width: 80vw;
+    height: 35vh;
+    bottom: 12%;
+    right: -15%;
 }
 
 .veja-mais {
@@ -163,6 +168,10 @@ body, html {
     margin-left: 8vw;
 }
 
+.titulo-container-cards {
+    display: none;
+}
+
 .card {
     width: 100%;
     height: 6vh;
@@ -179,6 +188,8 @@ body, html {
 }
 
 .background-contato {
+    width: unset;
+    height: 100vh;
     background-size: cover;
 }
 

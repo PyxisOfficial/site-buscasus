@@ -1,4 +1,11 @@
 const navbar = document.getElementById("navbar"),
+    target = document.querySelectorAll("[data-anime]"),
+    mobileMenu = document.getElementById('mobileMenu'),
+    navList = document.getElementById('navList'),
+    navListPosition = navList.getAttribute('left'),
+    line1 = document.getElementById('line1'),
+    line2 = document.getElementById('line2'),
+    line3 = document.getElementById('line3'),
     form = document.getElementById("form"),
     emailInput = document.getElementById("emailUser"),
     assuntoInput = document.getElementById("assuntoUser"),
@@ -6,8 +13,34 @@ const navbar = document.getElementById("navbar"),
     errorText = document.getElementsByClassName("error-text"),
     submitBtn = document.getElementById("submitBtn");
 
+function animateElements() {
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+
+    target.forEach((e) => {
+        if (windowTop > e.offsetTop) {
+            e.classList.add("animate");
+        } else {
+            e.classList.remove("animate");
+        }
+    });
+}
+
 function changeNav() {
     navbar.classList.toggle("navbar-active", scrollY > 0);
+}
+
+function dropNavbar() {
+    if (navListPosition == 0 ) {
+        navList.classList.remove('nav-list-active')
+        line1.classList.remove('line1-active')
+        line2.classList.remove('line2-active')
+        line3.classList.remove('line3-active')
+    } else {
+        navList.classList.toggle('nav-list-active')
+        line1.classList.toggle('line1-active')
+        line2.classList.toggle('line2-active')
+        line3.classList.toggle('line3-active')
+    }
 }
 
 function validateInputs() {
@@ -68,6 +101,8 @@ function removeInputsError() {
 }
 
 window.addEventListener("scroll", changeNav);
+window.addEventListener("scroll", animateElements);
+mobileMenu.addEventListener("click", dropNavbar);
 submitBtn.addEventListener("click", validateInputs);
 emailInput.addEventListener("input", removeInputsError);
 assuntoInput.addEventListener("input", removeInputsError);

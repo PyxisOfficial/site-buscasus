@@ -1,5 +1,6 @@
 #header {
     background: #FFFFFF;
+    height: 60vh;
 }
 
 .logo {
@@ -8,14 +9,18 @@
 }
 
 .conteudo-header {
+    position: relative;
     align-items: flex-start;
 }
 
 .img-header {
+    width: 45vw;
+    height: 45vh;
     display: block;
     z-index: 0;
     margin-right: 4vw;
-    top: 30%;
+    top: 15%;
+    right: -2vw;
 }
 
 .descricao-header {
@@ -50,5 +55,31 @@
 
 .img-app {
     display: block;
-    width: 50vw;
+    width: 55vw;
+    height: 50vh;
+    top: 0%;
 }
+
+.container-cards {
+    width: 50vw;
+    margin-top: 2vh;
+    margin-left: 50vw;
+}
+
+.card {
+    margin: 1.5vh 1vw 1.5vh 1vw;
+}
+
+.logo-footer {
+    width: 35vw;
+}
+
+.redes-img {
+    width: 4vw;
+    margin: 1vh 1vw;
+}
+
+.segundo-footer {
+    margin-top: 5vh;
+}
+

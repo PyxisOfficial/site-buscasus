@@ -16,8 +16,13 @@
     <header id="header">
         <nav id="navbar">
             <a href="#header"><img src="assets/img/logo-completa.png" alt="Logo BuscaSUS"
-                    class="logo select-disable"></a>
-            <ul class="nav-list">
+            class="logo select-disable"></a>
+            <div id="mobileMenu">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <ul class="nav-list" id="navList">
                 <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="#app" class="nav-link">Aplicativo</a></li>
                 <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
@@ -45,9 +50,9 @@
 
     <section id="sobre">
         <div class="container-g-sobre">
-            <h2 class="titulo-sobre">O que é o BuscaSUS?</h2>
+            <h2 class="titulo-sobre" data-anime='left'>O que é o BuscaSUS?</h2>
             <div class="textos-sobre">
-                <p class="descricao-sobre">O <span class="verde-escuro">BuscaSUS</span> é um aplicativo feito como o
+                <p class="descricao-sobre" data-anime='left'>O <span class="verde-escuro">BuscaSUS</span> é um aplicativo feito como o
                     intuito de evitar com que você perca tempo procurando médicos nos hospitais da sua região
                     nele você pode realizar uma pesquisa pela especialidade médica que precisa e encontrar os hospitais
                     mais próximos de você que atendem suas necessidades,
@@ -55,9 +60,9 @@
                     verificar a escala dos médicos cadastrados no nosso app!
                     Abaixo temos um vídeo breve que explica um pouco mais a ideia e o objetivo do BuscaSUS:
                 </p>
-                <img src="assets/img/qrcodebuscasus.png" alt="QR Code BuscaSUS" class="qrcode select-disable">
+                <img src="assets/img/qrcodebuscasus.png" alt="QR Code BuscaSUS" class="qrcode select-disable" data-anime='right'>
             </div>
-            <div class="container-video">
+            <div class="container-video" data-anime="right">
                 <h3 class="titulo-video">Video Pitch <span
                         class="material-symbols-outlined icone-info select-disable">info</span></h3>
                 <iframe class="video-sobre select-disable" width="560" height="315"
@@ -71,10 +76,10 @@
     </section>
 
     <section class="app">
-        <h2 id="app" class="titulo-app">Mais sobre o aplicativo</h2>
+        <h2 id="app" class="titulo-app" data-anime="left">Mais sobre o aplicativo</h2>
         <div class="container-app">
-            <img src="assets/img/mockups/mockup2.png" alt="" class="img-app select-disable">
-            <div class="container-cards">
+            <img src="assets/img/mockups/mockup2.png" alt="" class="img-app select-disable" data-anime="left">
+            <div class="container-cards" data-anime="right">
                 <h3 class="titulo-container-cards">Funcionalidades</h3>
                 <div class="card">
                     <div class="container-card-img"><img src="assets/img/icones/search.svg"
@@ -108,8 +113,8 @@
     <section class="contato">
         <img src="assets/img/backgrounds/background-contato.png" alt="" class="background-contato select-disable">
         <div class="container-contato">
-            <h2 id="contato" class="titulo-contato">Entre em contato</h2>
-            <form id="form" action="" class="form-contato">
+            <h2 id="contato" class="titulo-contato" data-anime="left">Entre em contato</h2>
+            <form id="form" action="" class="form-contato" data-anime="bottom">
                 <div class="cont-input">
                     <label for="emailUser">Email</label>
                     <input type="email" name="emailUser" id="emailUser" class="input-contato select-disable"
@@ -184,7 +189,7 @@
 
         <div class="creditos">
             <details>
-                <summary class="titulo-creditos">Créditos</summary>
+                <summary class="titulo-creditos select-disable">Créditos</summary>
                 <p>
                     <ul class="creditos-list">
                         <li class="creditos-list-item"><a href="https://www.flaticon.com/free-icons/destination"

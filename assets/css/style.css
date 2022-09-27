@@ -19,13 +19,43 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #3FB791;
+    background-color: #309172;
+    border-radius: 20px;
+    height: 20vh;
 }
 
 body {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .6s ease-in-out;
+    z-index: -1;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -100px, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 100px, 0);
 }
 
 .select-disable {
@@ -53,10 +83,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     transition: all .4s ease-in-out;
     padding: 10px 0 10px 0;
 }
@@ -90,6 +121,45 @@ body {
     text-decoration: none;
     color: #313131;
     white-space: nowrap;
+}
+
+#mobileMenu {
+    height: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 4vw;
+}
+
+#line1, #line3 {
+    width: 30px;
+    height: 5px;
+    background-color: #349684;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+#line2 {
+    width: 25px;
+    height: 5px;
+    background-color: #349684;
+    border-radius: 25px;
+    transition: all .1s linear;
+}
+
+
+.line1-active {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.line2-active {
+    display: none;
+}
+
+.line3-active {
+    /* background-color: #e94a4f; */
+    transform: rotate(-45deg) translate(10px, -5px);
 }
 
 .conteudo-header {
@@ -256,6 +326,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 22px;
+    margin-bottom: 2vh;
     color: #349684;
 }
 
@@ -340,7 +411,7 @@ body {
 
 .titulo-container-cards {
     position: absolute;
-    top: 10%;
+    top: -5%;
     color: #349684;
     font-size: 1.4vw;
 }
@@ -606,4 +677,22 @@ body {
 .titulo-creditos {
     color: white;
     text-align: center;
+    cursor: pointer;
 }
+
+details > summary {
+    list-style-type: '+ ';
+}
+
+details[open] > summary {
+    list-style-type: '- ';
+}
+
+@keyframes open {
+    0% {opacity: 0; margin-lef: -20px}
+    100% {opacity: 1; margin-left: 0px}
+}
+
+details[open] summary ~ * {
+    animation: open .5s ease-in-out;
+  }
