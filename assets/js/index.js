@@ -7,6 +7,22 @@ const navbar = document.getElementById("navbar"),
     line2 = document.getElementById('line2'),
     line3 = document.getElementById('line3'),
     form = document.getElementById("form"),
+    fade = document.getElementById('fade'),
+    openModalBtnProximidade = document.getElementById('openModalProximidade'),
+    closeModalBtnProximidade = document.getElementById('closeModalProximidade'),
+    modalProximidade = document.getElementById('modalProximidade'),
+    openModalBtnEscala = document.getElementById('openModalEscala'),
+    closeModalBtnEscala = document.getElementById('closeModalEscala'),
+    modalEscala = document.getElementById('modalEscala'),
+    openModalBtnVoz = document.getElementById('openModalVoz'),
+    closeModalBtnVoz = document.getElementById('closeModalVoz'),
+    modalVoz = document.getElementById('modalVoz'),
+    openModalBtnPlantoes = document.getElementById('openModalPlantoes'),
+    closeModalBtnPlantoes = document.getElementById('closeModalPlantoes'),
+    modalPlantoes = document.getElementById('modalPlantoes'),
+    openModalBtnMapa = document.getElementById('openModalMapa'),
+    closeModalBtnMapa = document.getElementById('closeModalMapa'),
+    modalMapa = document.getElementById('modalMapa'),
     emailInput = document.getElementById("emailUser"),
     assuntoInput = document.getElementById("assuntoUser"),
     msgInput = document.getElementById("msgUser"),
@@ -42,6 +58,51 @@ function dropNavbar() {
         line3.classList.toggle('line3-active')
     }
 }
+
+function openModalProximidade() {
+    modalProximidade.classList.toggle('hide');
+    fade.classList.toggle('hide');
+}
+
+[openModalBtnProximidade, closeModalBtnProximidade, fade].forEach((el) => {
+    el.addEventListener('click', openModalProximidade);
+})
+
+function openModalEscala() {
+    modalEscala.classList.toggle('hide');
+    fade.classList.toggle('hide');
+}
+
+[openModalBtnEscala, closeModalBtnEscala, fade].forEach((el) => {
+    el.addEventListener('click', openModalEscala);
+})
+
+function openModalVoz() {
+    modalVoz.classList.toggle('hide');
+    fade.classList.toggle('hide');
+}
+
+[openModalBtnVoz, closeModalBtnVoz, fade].forEach((el) => {
+    el.addEventListener('click', openModalVoz);
+})
+
+function openModalPlantoes() {
+    modalPlantoes.classList.toggle('hide');
+    fade.classList.toggle('hide');
+}
+
+[openModalBtnPlantoes, closeModalBtnPlantoes, fade].forEach((el) => {
+    el.addEventListener('click', openModalPlantoes);
+})
+
+function openModalMapa() {
+    modalMapa.classList.toggle('hide');
+    fade.classList.toggle('hide');
+}
+
+[openModalBtnMapa, closeModalBtnMapa, fade].forEach((el) => {
+    el.addEventListener('click', openModalMapa);
+})
 
 function validateInputs() {
     const regexEmail = /\S+@\S+\.\S+/,

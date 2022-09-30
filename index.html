@@ -48,7 +48,7 @@
             <span class="material-symbols-outlined setinha">expand_more</span>
         </a>
     </header>
-
+    <div id="fade" class="hide"></div>
     <section id="sobre">
         <div class="container-g-sobre">
             <h2 class="titulo-sobre" data-anime='left'>O que é o BuscaSUS?</h2>
@@ -82,27 +82,27 @@
             <img src="assets/img/mockups/mockup2.png" alt="" class="img-app select-disable" data-anime="left">
             <div class="container-cards" data-anime="right">
                 <h3 class="titulo-container-cards">Funcionalidades</h3>
-                <div class="card">
+                <div class="card" id="openModalProximidade">
                     <div class="container-card-img"><img src="assets/img/icones/search.svg"
                             class="card-img select-disable"></div>
                     <span class="texto-card">Pesquisa por proximidade</span>
                 </div>
-                <div class="card">
+                <div class="card" id="openModalEscala">
                     <div class="container-card-img"><img src="assets/img/icones/stethoscope.svg"
                             class="card-img select-disable"></div>
                     <span class="texto-card">Verificar escala de médicos</span>
                 </div>
-                <div class="card">
+                <div class="card" id="openModalVoz">
                     <div class="container-card-img"><img src="assets/img/icones/mic.svg"
                             class="card-img mic select-disable"></div>
                     <span class="texto-card">Pesquisa por voz</span>
                 </div>
-                <div class="card">
+                <div class="card" id="openModalPlantoes">
                     <div class="container-card-img"><img src="assets/img/icones/heart-monitor.svg"
                             class="card-img select-disable"></div>
                     <span class="texto-card">Ver plantões do dia</span>
                 </div>
-                <div class="card">
+                <div class="card" id="openModalMapa">
                     <div class="container-card-img"><img src="assets/img/icones/location.svg"
                             class="card-img select-disable"></div>
                     <span class="texto-card">Mapa de hospitais próximos</span>
@@ -110,6 +110,87 @@
             </div>
         </div>
     </section>
+
+    <div class="modais">
+        <div id="modalProximidade" class="modal hide">
+            <div class="modal-header">
+                <div class="titulo-modal">
+                    <img src="assets/img/icones/search.svg" alt="" class="modal-img select-disable">
+                    <h2>Pesquisa por proximidade</h2>
+                </div>
+                <button id="closeModalProximidade" class="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Você pesquisa pelo hospital, especialidade ou médico e o aplicativo automaticamente encontra as opções
+                    mais próximas de você para evitar que você perca tempo ou sofra danos em casos de emergência.
+                </p>
+            </div>
+        </div>
+
+        <div id="modalEscala" class="modal hide">
+            <div class="modal-header">
+                <div class="titulo-modal">
+                    <img src="assets/img/icones/stethoscope.svg" alt="" class="modal-img select-disable">
+                    <h2>Ver escalas médicas</h2>
+                </div>
+                <button id="closeModalEscala" class="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Você tem acesso as escalas dos médicos cadastrados em cada hospital, desde os dias do mês em que ele 
+                    estará de plantão aos horários de seus plantões.
+                </p>
+            </div>
+        </div>
+
+        <div id="modalVoz" class="modal hide">
+            <div class="modal-header">
+                <div class="titulo-modal">
+                    <img src="assets/img/icones/mic.svg" alt="" class="modal-img select-disable">
+                    <h2>Pesquisa por voz</h2>
+                </div>
+                <button id="closeModalVoz" class="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Você realizar pesquisas por voz! Aplicamos esta funcionalidade com o objetivo de tornar nosso aplicativo
+                    mais acessível para todas as pessoas.
+                </p>
+            </div>
+        </div>
+
+        <div id="modalPlantoes" class="modal hide">
+            <div class="modal-header">
+                <div class="titulo-modal">
+                    <img src="assets/img/icones/heart-monitor.svg" alt="" class="modal-img select-disable">
+                    <h2>Ver plantões do dia</h2>
+                </div>
+                <button id="closeModalPlantoes" class="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Você pode verificar todos os plantões do dia de cada hospital cadastrado em nosso sistema, facilitando o seu processo
+                    de busca da sua necessidade.
+                </p>
+            </div>
+        </div>
+
+        <div id="modalMapa" class="modal hide">
+            <div class="modal-header">
+                <div class="titulo-modal">
+                    <img src="assets/img/icones/location.svg" alt="" class="modal-img select-disable">
+                    <h2>Mapa de hospitais próximos</h2>
+                </div>
+                <button id="closeModalMapa" class="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Você tem acesso a um mapa completo da sua região e das regiões próximas para encontrar o hospital que atende a sua necessidade.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <section class="contato">
         <img src="assets/img/backgrounds/background-contato.png" alt="" class="background-contato select-disable">

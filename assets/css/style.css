@@ -291,6 +291,17 @@ body {
     }
 }
 
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    transition: .5s;
+}
+
 #sobre {
     width: 100%;
 }
@@ -414,6 +425,77 @@ body {
     filter: drop-shadow(0px 35px 14px rgba(0, 0, 0, 0.01)) drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.05)) drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
     margin: 2vw 1vw;
     cursor: pointer;
+}
+
+.close-modal {
+    width: 5rem;
+    height: 2rem;
+    line-height: 3vh;
+    border: none;
+    border-radius: 25vw;
+    background-color: #707070;
+    font-weight: 500;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: .5;
+    transition: opacity .4s ease-in-out;
+}
+
+.close-modal:hover {
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    max-width: 80%;
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    transition: .5s;
+}
+
+.titulo-modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo-modal h2 {
+    font-size: 1.3rem;
+}
+
+.modal-img {
+    height: 25px;
+    filter: brightness(0);
+    margin-right: 10px;
+}
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #757575;
+    margin-bottom: .8rem;
+    padding-bottom: .8rem;
+}
+
+.modal-body p {
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+    top: 30%;
 }
 
 .titulo-container-cards {
