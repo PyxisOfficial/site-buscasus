@@ -354,6 +354,10 @@ body {
     cursor: pointer;
 }
 
+.icone-info-modal {
+    margin-right: 5px;
+}
+
 .video-sobre {
     width: 100%;
     height: 80vh;

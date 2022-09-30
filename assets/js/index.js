@@ -8,6 +8,9 @@ const navbar = document.getElementById("navbar"),
     line3 = document.getElementById('line3'),
     form = document.getElementById("form"),
     fade = document.getElementById('fade'),
+    openModalBtnInfo = document.getElementById('openModalInfo'),
+    closeModalBtnInfo = document.getElementById('closeModalInfo'),
+    modalInfo = document.getElementById('modalInfo'),
     openModalBtnProximidade = document.getElementById('openModalProximidade'),
     closeModalBtnProximidade = document.getElementById('closeModalProximidade'),
     modalProximidade = document.getElementById('modalProximidade'),
@@ -58,6 +61,15 @@ function dropNavbar() {
         line3.classList.toggle('line3-active')
     }
 }
+
+function openModalInfo() {
+    modalInfo.classList.toggle('hide');
+    fade.classList.toggle('hide');
+}
+
+[openModalBtnInfo, closeModalBtnInfo, fade].forEach((el) => {
+    el.addEventListener('click', openModalInfo);
+})
 
 function openModalProximidade() {
     modalProximidade.classList.toggle('hide');

@@ -64,8 +64,8 @@
                 <img src="assets/img/qrcodebuscasus.png" alt="QR Code BuscaSUS" class="qrcode select-disable" data-anime='right'>
             </div>
             <div class="container-video" data-anime="right">
-                <h3 class="titulo-video">Video Pitch <span
-                        class="material-symbols-outlined icone-info select-disable">info</span></h3>
+                <h3 class="titulo-video">Video Pitch 
+                <span class="material-symbols-outlined icone-info select-disable" id="openModalInfo">info</span></h3>
                 <iframe class="video-sobre select-disable" width="560" height="315"
                     src="https://www.youtube.com/embed/Q1puhFhs3hQ" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -112,6 +112,22 @@
     </section>
 
     <div class="modais">
+        <div id="modalInfo" class="modal hide">
+            <div class="modal-header">
+                <div class="titulo-modal">
+                    <span class="material-symbols-outlined icone-info-modal select-disable">info</span></h3>
+                    <h2>O que é um vídeo pitch?</h2>
+                </div>
+                <button id="closeModalInfo" class="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    O vídeo pitch é um vídeo de curta duração feito com objetivo de apresentar uma ideia ou projeto de forma
+                    simples.
+                </p>
+            </div>
+        </div>
+
         <div id="modalProximidade" class="modal hide">
             <div class="modal-header">
                 <div class="titulo-modal">
