@@ -87,7 +87,7 @@ body, html {
     width: 130px;
     font-size: 20px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .btn-header::before {
@@ -95,10 +95,10 @@ body, html {
 }
 
 .img-header {
-    width: 80vw;
-    height: 35vh;
+    width: 70vw;
+    height: 70vw;
     bottom: 12%;
-    right: -15%;
+    right: -20%;
 }
 
 .veja-mais {

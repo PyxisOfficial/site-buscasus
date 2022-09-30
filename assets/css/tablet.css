@@ -1,3 +1,8 @@
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 #header {
     background: #FFFFFF;
     height: 60vh;
@@ -15,11 +20,11 @@
 
 .img-header {
     width: 45vw;
-    height: 45vh;
+    height: 45vw;
     display: block;
     z-index: 0;
     margin-right: 4vw;
-    top: 15%;
+    top: 40%;
     right: -2vw;
 }
 
@@ -36,6 +41,10 @@
 .btn-header {
     background: linear-gradient(116.36deg, #46CB9A -10.88%, #349684 64.89%);
     font-weight: 600;
+}
+
+#sobre {
+    margin-top: 100px;
 }
 
 .video-sobre {

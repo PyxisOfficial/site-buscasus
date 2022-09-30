@@ -1,0 +1,23 @@
+.img-header {
+    right: -5%;
+}
+
+.descricao-header {
+    font-size: 2.5vh;
+}
+
+.btn-header {
+    margin-top: 20px;
+    width: 15vw;
+    height: 6vh;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.btn-header::before {
+    width: 15vw;
+    height: 6vh;
+    font-size: 3vh;
+    font-weight: 500;
+    line-height: 6vh;
+}
