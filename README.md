@@ -26,6 +26,8 @@ Site criado para conhecer o BuscaSUS, um projeto criado para o trabalho de concl
 <br>
 ‣ 👨‍🚀 [Yuri Oliveira](https://github.com/YuriOlivs)
 
+<br>
+
 ## 🔗 Link
 
 ‣ [Clique aqui para acessar](https://pyxisofficial.github.io/buscaSusSite/)
