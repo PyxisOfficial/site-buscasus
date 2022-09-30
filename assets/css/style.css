@@ -273,12 +273,7 @@ body {
 }
 
 @keyframes setinha {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
+    0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
 
@@ -805,8 +800,15 @@ details[open] > summary {
 }
 
 @keyframes open {
-    0% {opacity: 0; margin-lef: -20px}
-    100% {opacity: 1; margin-left: 0px}
+    0% {
+        opacity: 0; 
+        margin-lef: -20px
+    }
+
+    100% {
+        opacity: 1; 
+        margin-left: 0px
+    }
 }
 
 details[open] summary ~ * {
