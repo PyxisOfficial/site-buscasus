@@ -1,12 +1,12 @@
-const navbar = document.getElementById("navbar"),
-    target = document.querySelectorAll("[data-anime]"),
+const navbar = document.getElementById('navbar'),
+    target = document.querySelectorAll('[data-anime]'),
     mobileMenu = document.getElementById('mobileMenu'),
     navList = document.getElementById('navList'),
     navListPosition = navList.getAttribute('left'),
     line1 = document.getElementById('line1'),
     line2 = document.getElementById('line2'),
     line3 = document.getElementById('line3'),
-    form = document.getElementById("form"),
+    form = document.getElementById('form'),
     fade = document.getElementById('fade'),
     openModalBtnInfo = document.getElementById('openModalInfo'),
     closeModalBtnInfo = document.getElementById('closeModalInfo'),
@@ -26,39 +26,39 @@ const navbar = document.getElementById("navbar"),
     openModalBtnMapa = document.getElementById('openModalMapa'),
     closeModalBtnMapa = document.getElementById('closeModalMapa'),
     modalMapa = document.getElementById('modalMapa'),
-    emailInput = document.getElementById("emailUser"),
-    assuntoInput = document.getElementById("assuntoUser"),
-    msgInput = document.getElementById("msgUser"),
-    errorText = document.getElementsByClassName("error-text"),
-    submitBtn = document.getElementById("submitBtn");
+    emailInput = document.getElementById('emailUser'),
+    assuntoInput = document.getElementById('assuntoUser'),
+    msgInput = document.getElementById('msgUser'),
+    errorText = document.getElementsByClassName('error-text'),
+    submitBtn = document.getElementById('submitBtn');
 
 function animateElements() {
     const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
 
     target.forEach((e) => {
         if (windowTop > e.offsetTop) {
-            e.classList.add("animate");
+            e.classList.add('animate');
         } else {
-            e.classList.remove("animate");
+            e.classList.remove('animate');
         }
     });
 }
 
 function changeNav() {
-    navbar.classList.toggle("navbar-active", scrollY > 0);
+    navbar.classList.toggle('navbar-active', scrollY > 0);
 }
 
 function dropNavbar() {
-    if (navListPosition == 0 ) {
-        navList.classList.remove('nav-list-active')
-        line1.classList.remove('line1-active')
-        line2.classList.remove('line2-active')
-        line3.classList.remove('line3-active')
+    if (navListPosition == 0) {
+        navList.classList.remove('nav-list-active');
+        line1.classList.remove('line1-active');
+        line2.classList.remove('line2-active');
+        line3.classList.remove('line3-active');
     } else {
-        navList.classList.toggle('nav-list-active')
-        line1.classList.toggle('line1-active')
-        line2.classList.toggle('line2-active')
-        line3.classList.toggle('line3-active')
+        navList.classList.toggle('nav-list-active');
+        line1.classList.toggle('line1-active');
+        line2.classList.toggle('line2-active');
+        line3.classList.toggle('line3-active');
     }
 }
 
@@ -123,30 +123,30 @@ function validateInputs() {
         msgValue = msgInput.value;
 
     if (emailTest === false) {
-        emailInput.classList.add("input-error");
-        errorText[0].classList.add("active");
+        emailInput.classList.add('input-error');
+        errorText[0].classList.add('active');
     } else {
-        emailInput.classList.remove("input-error");
-        errorText[0].classList.remove("active");
+        emailInput.classList.remove('input-error');
+        errorText[0].classList.remove('active');
     }
 
-    if (assuntoValue === "") {
-        assuntoInput.classList.add("input-error");
-        errorText[1].classList.add("active");
+    if (assuntoValue === '') {
+        assuntoInput.classList.add('input-error');
+        errorText[1].classList.add('active');
     } else {
-        assuntoInput.classList.remove("input-error");
-        errorText[1].classList.remove("active");
+        assuntoInput.classList.remove('input-error');
+        errorText[1].classList.remove('active');
     }
 
-    if (msgValue === "") {
-        msgInput.classList.add("input-error");
-        errorText[2].classList.add("active");
+    if (msgValue === '') {
+        msgInput.classList.add('input-error');
+        errorText[2].classList.add('active');
     } else {
-        msgInput.classList.remove("input-error");
-        errorText[2].classList.remove("active");
+        msgInput.classList.remove('input-error');
+        errorText[2].classList.remove('active');
     }
 
-    if (emailTest === true && assuntoValue !== "" && msgValue !== "") {
+    if (emailTest === true && assuntoValue !== '' && msgValue !== '') {
         form.submit();
     }
 }
@@ -158,25 +158,25 @@ function removeInputsError() {
         msgValue = msgInput.value;
 
     if (emailTest === true) {
-        emailInput.classList.remove("input-error");
-        errorText[0].classList.remove("active");
+        emailInput.classList.remove('input-error');
+        errorText[0].classList.remove('active');
     }
 
-    if (assuntoValue !== "") {
-        assuntoInput.classList.remove("input-error");
-        errorText[1].classList.remove("active");
+    if (assuntoValue !== '') {
+        assuntoInput.classList.remove('input-error');
+        errorText[1].classList.remove('active');
     }
 
-    if (msgValue !== "") {
-        msgInput.classList.remove("input-error");
-        errorText[2].classList.remove("active");
+    if (msgValue !== '') {
+        msgInput.classList.remove('input-error');
+        errorText[2].classList.remove('active');
     }
 }
 
-window.addEventListener("scroll", changeNav);
-window.addEventListener("scroll", animateElements);
-mobileMenu.addEventListener("click", dropNavbar);
-submitBtn.addEventListener("click", validateInputs);
-emailInput.addEventListener("input", removeInputsError);
-assuntoInput.addEventListener("input", removeInputsError);
-msgInput.addEventListener("input", removeInputsError);
+window.addEventListener('scroll', changeNav);
+window.addEventListener('scroll', animateElements);
+mobileMenu.addEventListener('click', dropNavbar);
+submitBtn.addEventListener('click', validateInputs);
+emailInput.addEventListener('input', removeInputsError);
+assuntoInput.addEventListener('input', removeInputsError);
+msgInput.addEventListener('input', removeInputsError);
