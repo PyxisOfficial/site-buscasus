@@ -33,6 +33,19 @@ body, html {
     padding: 15px;
     width: 100%;
     justify-content: center;
+    opacity: 0;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .navbar-active {
