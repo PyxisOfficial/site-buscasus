@@ -108,10 +108,7 @@ body, html {
 }
 
 .img-header {
-    width: 70vw;
-    height: 70vw;
-    bottom: 12%;
-    right: -20%;
+    display: none;
 }
 
 .veja-mais {
