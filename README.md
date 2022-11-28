@@ -30,4 +30,4 @@ Site criado para conhecer o BuscaSUS, um projeto criado para o trabalho de concl
 
 ## 🔗 Link
 
-‣ [Clique aqui para acessar](https://pyxisofficial.github.io/buscaSusSite/)
+‣ [Clique aqui para acessar](https://pyxisofficial.github.io/site-buscasus/)
